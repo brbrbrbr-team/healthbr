@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Doctor page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="doctor-style.css">
+
+</head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.1.0.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-1.8.0.min.js"></script>
+
+    <script>
+        let plot_data_top =  [ {{#plot-data-top}}{{.}},{{/plot-data-top}} ];
+        let plot_data_bottom =  [ {{#plot-data-bottom}}{{.}},{{/plot-data-bottom}} ];
+        let plot_data_dates = [ {{#plot-data-dates}}'{{.}}',{{/plot-data-dates}} ];
+    </script>
+
+    <script src="/doctor-script.js"></script>
+    
+
+   
+      <div class="container">
+        <h4>
+          <br>
+            Данные о пациенте
+            <br>
+        </h4>      
+        <div>
+          <table class="table table-striped" >
+              <thead>
+                <tr>
+                  
+                  <th>ФИО</th>
+                  <th>Возраст</th>
+                  <th>СНИЛС</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>И.И Иванович</td>
+                  <td>89</td>
+                  <td>123-456-789-01</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+  
+        <h4>
+          <br>
+            Настройки графика
+            <br>
+        </h4>   
+        <!-- Default switch -->
+        <!-- <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="customSwitch1">
+          <label class="custom-control-label" for="customSwitch1">Какие-либо настройки</label>      
+        </div> -->
+  
+<!--        <div class="container">-->
+<!--         -->
+<!--          <div class="row">-->
+<!--            <div class="outer" >-->
+<!--              <span class="inner">-->
+<!--                Выбор периода отобржения показаний:-->
+<!--              </span>-->
+<!--          </div>-->
+<!--            -->
+<!--            <div class="col-3">-->
+<!--              <input type="date" class="form-control" id="date" name="date" placeholder="Дата" required>-->
+<!--             -->
+<!--            </div>-->
+<!--            <div class="outer" >-->
+<!--              <span class="inner">-->
+<!--                --->
+<!--              </span>-->
+<!--          </div>-->
+<!--              -->
+<!--            <div class="col-3">-->
+<!--              <input type="date" class="form-control" id="date" name="date" placeholder="Дата" required>-->
+<!--            </div>-->
+<!--            <div class="col-2">-->
+<!--             <button type="button" class="btn btn-primary">Добавить период</button>-->
+<!--            </div>-->
+<!--            <div class="col-7">-->
+<!--             -->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--    -->
+<!--  -->
+<!--        <h4>-->
+<!--          <br>-->
+<!--            График-->
+<!--            <br>-->
+<!--        </h4>   -->
+
+<!--        <div class="row">                    -->
+<!--          <div class="col-5">-->
+<!--            <p></p>-->
+<!--          </div>       -->
+<!--      -->
+<!--          &lt;!&ndash; <div class="col-7">-->
+<!--            <div class='d-flex justify-content-end'>-->
+<!--              <button type="button" style="margin-right: 5px;"  class="btn btn-primary">Просмотреть показания за месяц</button>-->
+<!--              <button type="button" class="btn btn-primary">Просмотреть показания за год</button>-->
+<!--          -->
+<!--            </div>-->
+<!--            </div> &ndash;&gt;-->
+<!--        </div>-->
+
+       <div  id="graph"  ></div>
+
+
+
+    </div>
+</body>
+</html>
+
+
+
+      <!--  <body>
+          <div id="gd"></div>
+
+          <script>
+              Plotly.newPlot("gd", /* JSON object */ {
+                  "data": [{ "y": [6, 2, 3]}],
+                  "data": [{ "x": [10,2,10]}],
+                  "layout": { "width": 1200, "height": 600},
+              })
+          </script>
+      </body> -->
