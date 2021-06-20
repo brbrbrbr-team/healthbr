@@ -1,0 +1,29 @@
+
+/* BASIC */
+
+html 
+
+
+  body {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+  }
+  
+ .outer {
+  display: flex;
+  align-items: center;     /*Центрирование по вертикали */
+}
+  /* OTHERS */
+  
+  *:focus {
+      outline: none;
+  } 
+
+  .btn-wrapper-end {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #icon {
+    width:60%;
+  }

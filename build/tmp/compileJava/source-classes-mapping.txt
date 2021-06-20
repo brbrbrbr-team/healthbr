@@ -1,0 +1,47 @@
+brbrbrbrbr/healthbr/controller/RegistrationController.java
+ brbrbrbrbr.healthbr.controller.RegistrationController
+brbrbrbrbr/healthbr/dto/DiaryDto.java
+ brbrbrbrbr.healthbr.dto.DiaryDto
+ brbrbrbrbr.healthbr.dto.DiaryDto$DiaryDtoBuilder
+brbrbrbrbr/healthbr/entity/Recommendation.java
+ brbrbrbrbr.healthbr.entity.Recommendation
+ brbrbrbrbr.healthbr.entity.Recommendation$RecommendationBuilder
+brbrbrbrbr/healthbr/service/PatientService.java
+ brbrbrbrbr.healthbr.service.PatientService
+brbrbrbrbr/healthbr/controller/DiaryController.java
+ brbrbrbrbr.healthbr.controller.DiaryController
+brbrbrbrbr/healthbr/repository/PatientRepository.java
+ brbrbrbrbr.healthbr.repository.PatientRepository
+brbrbrbrbr/healthbr/repository/DeviceRepository.java
+ brbrbrbrbr.healthbr.repository.DeviceRepository
+brbrbrbrbr/healthbr/validator/PasswordMatchesValidator.java
+ brbrbrbrbr.healthbr.validator.PasswordMatchesValidator
+brbrbrbrbr/healthbr/dto/PatientDto.java
+ brbrbrbrbr.healthbr.dto.PatientDto
+brbrbrbrbr/healthbr/service/BasePatientService.java
+ brbrbrbrbr.healthbr.service.BasePatientService
+brbrbrbrbr/healthbr/entity/Device.java
+ brbrbrbrbr.healthbr.entity.Device
+ brbrbrbrbr.healthbr.entity.Device$DeviceBuilder
+brbrbrbrbr/healthbr/validator/ann/PasswordMatches.java
+ brbrbrbrbr.healthbr.validator.ann.PasswordMatches
+brbrbrbrbr/healthbr/entity/Patient.java
+ brbrbrbrbr.healthbr.entity.Patient
+ brbrbrbrbr.healthbr.entity.Patient$PatientBuilder
+brbrbrbrbr/healthbr/HealthbrApplication.java
+ brbrbrbrbr.healthbr.HealthbrApplication
+brbrbrbrbr/healthbr/repository/RecommendationRepository.java
+ brbrbrbrbr.healthbr.repository.RecommendationRepository
+brbrbrbrbr/healthbr/controller/RecommendationsController.java
+ brbrbrbrbr.healthbr.controller.RecommendationsController
+brbrbrbrbr/healthbr/configuration/ApplicationConfiguration.java
+ brbrbrbrbr.healthbr.configuration.ApplicationConfiguration
+brbrbrbrbr/healthbr/entity/PatientTestimony.java
+ brbrbrbrbr.healthbr.entity.PatientTestimony
+ brbrbrbrbr.healthbr.entity.PatientTestimony$PatientTestimonyBuilder
+brbrbrbrbr/healthbr/repository/PatientTestimonyRepository.java
+ brbrbrbrbr.healthbr.repository.PatientTestimonyRepository
+brbrbrbrbr/healthbr/controller/DoctorController.java
+ brbrbrbrbr.healthbr.controller.DoctorController
+brbrbrbrbr/healthbr/controller/LoginController.java
+ brbrbrbrbr.healthbr.controller.LoginController
